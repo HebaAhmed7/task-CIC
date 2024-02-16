@@ -5,22 +5,26 @@ import { ListUsersComponent } from './components/list-users/list-users.component
 
 const routes: Routes = [
   {
-    path:'',component:ListUsersComponent
+    path: '',
+    component: ListUsersComponent,
   },
 
   {
-    path:'user-form',component:UserFormComponent
+    path: 'user-form',
+    component: UserFormComponent,
   },
   {
-    path:'list-users',component:ListUsersComponent
+    path: 'user-form/:id',
+    component: UserFormComponent,
   },
   {
-    path:'addUser',component:UserFormComponent
+    path: 'list-users',
+    component: ListUsersComponent,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
