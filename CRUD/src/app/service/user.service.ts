@@ -12,13 +12,13 @@ export class UserService {
     { id: 2, firstName: 'Jane', lastName: 'Smith', birthDate: '1997-05-15', phoneNumber: '9876543210',countryCode:'Eg', isActive: false },
     { id: 3, firstName: 'jan', lastName: 'Doe', birthDate: '1980-01-01', phoneNumber: '1234567790', countryCode:'uk',isActive: true },
     { id: 4, firstName: 'Jane', lastName: 'Smith', birthDate: '1992-05-15', phoneNumber: '9876778210',countryCode:'Eg', isActive: false },
-    { id: 4, firstName: 'Jane', lastName: 'Smith', birthDate: '1992-05-15', phoneNumber: '9876778210',countryCode:'Eg', isActive: false },
-    { id: 4, firstName: 'Jane', lastName: 'Smith', birthDate: '1992-05-15', phoneNumber: '9876778210',countryCode:'Eg', isActive: false }
+    { id: 5, firstName: 'Jane', lastName: 'Smith', birthDate: '1992-05-15', phoneNumber: '9876778210',countryCode:'Eg', isActive: false },
+    { id: 6, firstName: 'Jane', lastName: 'Smith', birthDate: '1992-05-15', phoneNumber: '9876778210',countryCode:'Eg', isActive: false }
   ];
   private usersSubject: BehaviorSubject<UserModel[]> = new BehaviorSubject<UserModel[]>(this.users);
 
  getUsers():Observable<UserModel[]> {
-      this.users;
+    this.users;
     return this.usersSubject.asObservable();
   }
 

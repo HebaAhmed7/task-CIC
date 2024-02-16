@@ -35,7 +35,7 @@ export class UserFormComponent {
   if(this.userForm.valid){
    const user: UserModel = this.userForm.value;
       this.userService.addUser(user);
-      this.userForm.setValue(user);
+      this.userForm.patchValue(user);
       console.log(user)
   }
 
