@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { UserModel } from '../material/user-model';
+import { UserModel } from '../model/user-model';
 
 @Injectable({
   providedIn: 'root',
@@ -90,13 +90,13 @@ export class UserService {
     }
   }
 
-  updateUser(id: number, user: UserModel) {
+  public updateUser(id: number, user: UserModel) {
     const index = this.users.findIndex((u) => u.id === id);
     user.id = id;
     this.users[index] = { ...user };
   }
 
-  deleteUser(id: number): Observable<UserModel[]> {
+ public deleteUser(id: number): Observable<UserModel[]> {
     const index = this.users.splice(
       this.users.findIndex((user) => user.id === id),
       1

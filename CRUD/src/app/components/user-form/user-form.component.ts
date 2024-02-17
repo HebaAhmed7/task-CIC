@@ -1,4 +1,4 @@
-import { UserModel } from '../../material/user-model';
+import { UserModel } from '../../model/user-model';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -42,7 +42,7 @@ export class UserFormComponent implements OnInit {
     }
   }
 
-  userDetails() {
+  public userDetails() {
     this.router.navigate(['/list-users']);
   }
   public ngOnInit(): void {

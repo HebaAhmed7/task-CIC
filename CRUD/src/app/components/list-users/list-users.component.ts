@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { UserModel } from '../../material/user-model';
+import { UserModel } from '../../model/user-model';
 import { Component, DestroyRef, OnInit, ViewChild } from '@angular/core';
 import { UserService } from '../../service/user.service';
 import {

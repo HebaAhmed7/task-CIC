@@ -7,7 +7,8 @@
           placeholder="Search users"
           [formControl]="searchControl" />
       </mat-form-field>
-      <button class="btn btn-primary mt-2" type="button" (click)="addUser()">
+      <button class="btn btn-primary w-25" type="button"
+        (click)="addUser()">
         AddUser
       </button>
     </div>
@@ -63,13 +64,13 @@
         <th mat-header-cell *matHeaderCellDef>Actions</th>
         <td mat-cell *matCellDef="let user" class="d-flex gap-1">
           <button
-            class="btn btn-primary"
+            class="btn btn-primary mt-3"
             type="button"
             (click)="updateUsers(user.id)">
             Update User
           </button>
           <button
-            class="btn btn-danger"
+            class="btn btn-danger mt-3 "
             type="button"
             (click)="deleteUser(user.id)">
             Delete User
